@@ -1,0 +1,33 @@
+body {
+  background-color: #ffe4c4; }
+
+#profile-box {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.img {
+  width: 18%;
+  min-width: 150px;
+  min-height: 150px;
+  position: relative;
+  align-self: center;
+  border: 2px solid #07f723;
+  border-radius: 50%; }
+
+#inner-div {
+  background-color: #c3c6a5;
+  margin: 10px;
+  width: fit-content;
+  align-self: center;
+  align-items: center;
+  border-radius: 12px;
+  padding: 4px 20px; }
+  #inner-div p {
+    text-align: center;
+    font-size: 25px; }
+  #inner-div form input {
+    background-color: #e5e5f3;
+    border-radius: 5px;
+    font-size: 20px; }

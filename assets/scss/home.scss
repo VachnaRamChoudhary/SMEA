@@ -1,0 +1,66 @@
+#home-container {
+    background-color: bisque;
+    display: flex;
+    margin-bottom: 0px;
+    padding-bottom: 55px;
+    #feed-posts {
+        margin-top: 15px;
+        width: 68%;
+        padding: 10px;
+    }
+    #user-friends {
+        margin-top: 15px;
+        width: 30%;
+        padding: 10px;
+        border-left: 1px solid lightgrey;
+        height: 100%;
+    }
+}
+
+#text-area {
+    background-color: rgb(209, 241, 243);
+    border-radius: 10px;
+    padding: 4px 10px;
+    font-size: 20px;
+    max-width: 65%;
+}
+
+#post-btn {
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: rgb(30, 123, 30);
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: rgb(26, 230, 233);
+    padding: 2px 5px;
+}
+
+#post-btn:hover {
+    background-color: #f161ec;
+    color: green;
+}
+
+#post-box {
+    //background-color: aliceblue;
+    padding: 0px 15px;
+    padding-top: 12px;
+    border-radius: 15px;
+    margin-left: 3%;
+}
+
+h1 {
+    margin-left: 5%;
+    font-size: 30px;
+}
+
+#user-list {
+    font-size: 26px;
+    background-color: rgb(233, 213, 232);
+    width: fit-content;
+    padding: 2px 7px;
+    border-radius: 5px;
+}
+
+#user-list:hover {
+    background-color: rgb(155, 210, 246);
+}

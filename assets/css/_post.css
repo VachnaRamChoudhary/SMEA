@@ -1,0 +1,69 @@
+#post-content {
+  width: fit-content;
+  max-width: 99%;
+  padding: 2px 7px;
+  font-size: 25px;
+  border-radius: 8px;
+  background-color: #934181;
+  color: white; }
+
+.delete_post-button {
+  border-radius: 5px;
+  padding: 2px 7px;
+  background: #c780bf;
+  color: #f4f0f2;
+  font-size: 16px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: .5s;
+  margin-left: 10px; }
+
+.delete_post-button:hover {
+  background: #03e9f4;
+  color: #f40b0b;
+  border-radius: 5px; }
+
+.user {
+  margin-top: -10px;
+  color: green; }
+
+.likes {
+  border-radius: 5px;
+  padding: 2px 7px;
+  background: #8cabab;
+  font-size: 16px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: .5s;
+  margin-left: 10px;
+  width: fit-content; }
+
+.comment {
+  border-bottom-left-radius: 7px;
+  border-top-left-radius: 7px;
+  background-color: #bdd8bd;
+  margin-right: 0px;
+  font-size: 15px;
+  color: black;
+  padding: 2px 5px; }
+
+.cmt-btn {
+  border-bottom-right-radius: 7px;
+  border-top-right-radius: 7px;
+  background-color: #1e7b1e;
+  margin-left: 0px;
+  font-size: 15px;
+  color: #1ae6e9;
+  padding: 2px 5px; }
+
+.cmt-btn:hover {
+  background-color: #03e9f4;
+  color: green; }
+
+.post-box {
+  background-color: #c3c6a5;
+  color: #0ebb20;
+  padding: 1px 10px;
+  width: fit-content;
+  border-radius: 8px;
+  margin: 2px; }

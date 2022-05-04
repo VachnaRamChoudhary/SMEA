@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="/css/_comment.css">
+<li class="cmt-box" id="comment-<%= comment._id %>">
+    <p>
+        <div id="comment">
+            <%= comment.content %>
+        </div>
+        <br>
+        <small>
+            <%= comment.user.name %>
+        </small>
+
+        <!-- CHANGE :: display the likes of this comment, if the user is logged in, then show the link to toggle likes, else, just show the count -->
+        <!-- study about the data attribute -->
+        <small>
+            <% if (locals.user){ %>
+                <a class="toggle-like-button" data-likes="<%= comment.likes.length %>" href="/likes/toggle/?id=<%=comment._id%>&type=Comment" >
+                    <span class="likes-cmt"><%= post.likes.length %> Likes</span>
+                </a>
+            <% }else{ %>
+                <span class="likes-cmt"><%= post.likes.length %> Likes</span>
+            <% } %>
+        </small>
+
+        <% if (locals.user && locals.user.id == comment.user){ %>
+
+            <small>
+        <a class="delete-comment-button" href="/comments/destroy/<%=comment._id%>">Delete Comment</a>
+    </small>
+            <% } %>
+
+    </p>
+
+</li>

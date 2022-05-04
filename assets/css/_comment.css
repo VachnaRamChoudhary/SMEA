@@ -1,0 +1,36 @@
+.likes-cmt {
+  background-color: #a3f29f;
+  border-radius: 5px;
+  margin: 2px 5px;
+  padding: 2px 10px; }
+
+.delete-comment-button {
+  border-radius: 5px;
+  padding: 2px 7px;
+  background: #4f5f9f;
+  color: #f4f0f2;
+  font-size: 12px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: .5s;
+  margin-left: 10px; }
+
+.delete-comment-button:hover {
+  background: #03e9f4;
+  color: #f40b0b;
+  border-radius: 5px; }
+
+#comment {
+  background-color: #52bda1;
+  width: fit-content;
+  padding: 2px 5px;
+  font-size: 15px;
+  border-radius: 5px; }
+
+.cmt-box {
+  background-color: #b3b784;
+  color: #ff00f2;
+  padding: 1px 10px;
+  width: fit-content;
+  border-radius: 8px;
+  margin: 2px; }

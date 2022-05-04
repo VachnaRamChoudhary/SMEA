@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="/css/user_sign_in.css">
+<div class="login-box">
+    <h2>Sign in</h2>
+    <form action="/users/create-session" method="post">
+        <div class="user-box">
+            <input type="email" name="email" placeholder="Email" required>
+            <label>Email</label>
+        </div>
+        <div class="user-box">
+            <input type="password" name="password" placeholder="Pasword" required>
+            <label>Password</label>
+        </div>
+        <a>
+            <input id="btn" type="submit" value="Sign In">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </a>
+        <a href="/users/auth/google" class="logo" style="padding: 10px 20px;"><img src="/images/google.svg" width="20" height="20">
+            <b> oogle Sign In</b>
+        </a>
+
+    </form>
+</div>

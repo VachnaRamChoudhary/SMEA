@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="/css/_post.css">
+<li class="post-box" id="post-<%= post._id%>">
+    <p>
+
+        <div id="post-content">
+            <%= post.content%>
+        </div>
+
+        <br>
+        <small class="user">
+                    Posted By:
+             <%=post.user.name%>
+            </small>
+        <%if(locals.user && locals.user.id == post.user.id){%>
+            <small>
+            <a class="delete_post-button" href="/posts/destroy/<%= post.id %>">Delete Post</a>
+        </small>
+            <%}%>
+
+                <!-- CHANGE :: display the likes of this post, if the user is logged in, then show the link to toggle likes, else, just show the count -->
+                <br>
+                <!-- study about the data attribute -->
+                <small>
+        <% if (locals.user){ %>
+            <a id="likes" class="toggle-like-button" data-likes="<%= post.likes.length %>" href="/likes/toggle/?id=<%=post._id%>&type=Post">
+                    <p class="likes"><%= post.likes.length %> Likes</p>
+            </a>
+        <% }else{ %>
+            <p class="likes"><%= post.likes.length %> Likes</p>
+        <% } %>
+    </small>
+    </p>
+
+    <div class="post-comments">
+        <% if(locals.user){%>
+            <form action="/comments/create" method="POST">
+                <input class="comment" type="text" name="content" placeholder="Type here to add comment..." required>
+                <input type="hidden" name="post" value="<%= post._id %>" id="">
+                <input class="cmt-btn" type="submit" value="Add Comment">
+            </form>
+            <% } %>
+
+                <div class="post-comments-list">
+                    <ul id="post-comment-<%=post._id%>">
+                        <% for (comment of post.comments){%>
+                            <%- include('_comment')-%>
+                                <%}%>
+
+                    </ul>
+
+                </div>
+
+    </div>
+
+</li>
