@@ -28,8 +28,8 @@ const customMware = require('./config/middleware')
 // setup the chat server to be used with socket.io
 const chatServer = require('http').Server(app);
 const chatSockets = require('./config/chat_sockets').chatSockets(chatServer);
-// chatServer.listen(5000);
-chatServer.listen(process.env.PORT);
+chatServer.listen(5000);
+//chatServer.listen();
 console.log('chat server is listening on port 5000');
 
 
@@ -78,8 +78,8 @@ app.use(session({
         maxAge: (1000 * 60 * 100)
     },
     store: MongoStore.create({
-            //mongoUrl: 'mongodb://127.0.0.1:27017/SMEA',
-            mongoUrl: 'mongodb+srv://vachnaram:ejkCz467C8X15ZaX@cluster0.rvepl.mongodb.net/SMEA?retryWrites=true&w=majority',
+            mongoUrl: 'mongodb://127.0.0.1:27017/SMEA',
+            //mongoUrl: 'mongodb+srv://vachnaram:ejkCz467C8X15ZaX@cluster0.rvepl.mongodb.net/SMEA?retryWrites=true&w=majority',
             mongooseConnection: db,
             autoRemove: 'disabled'
         },

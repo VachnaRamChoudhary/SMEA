@@ -7,8 +7,8 @@ const mongoose = require('mongoose');
 
 
 //connect to databas
-//mongoose.connect('mongodb://localhost/user_db');
-mongoose.connect('mongodb+srv://vachnaram:ejkCz467C8X15ZaX@cluster0.rvepl.mongodb.net/user_db?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://127.0.0.1:27017/user_db', { useNewUrlParser: true, useUnifiedTopology: true });
+//mongoose.connect('mongodb+srv://vachnaram:ejkCz467C8X15ZaX@cluster0.rvepl.mongodb.net/user_db?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 
 
 const db = mongoose.connection;
